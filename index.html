@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <link type="text/css" rel="stylesheet" href="time.css" />
+  <title>Republic of CATV - Real Clock 6.1</title>
+  </head>
+ <body onLoad="init()">
+  <script type="text/javascript" src="DETECTOR.JS">
+  </script>
+  <script type="text/javascript" src="RC.JS">
+  </script>
+  <canvas width="152" height="152" id="analogclock_0">N/A</canvas><br />
+  <div id="defaultclock">
+  </div>
+  <br />
+  <b>Select a timezone:</b>
+  <select id="timezonemaker" onChange="changetz();"> 
+   <option value="-12.25">(UTC-12:15) International Dateline West</option>
+   <option value="-12.0">(UTC-12:00) Baker Island</option>
+   <option value="-11.0">(UTC-11:00) American Samoa, Midway Island</option>
+   <option value="-10.25">(UTC-10:15) Big Errors</option>
+   <option value="-10.0">(UTC-10:00) Hawaii</option>
+   <option value="-9.5">(UTC-09:30) Taiohae</option>
+   <option value="-9.0">(UTC-09:00) Alaska</option>
+   <option value="-8.0">(UTC-08:00) Pacific Time</option>
+   <option value="-7.5">(UTC-07:30) National 1398</option>
+   <option value="-7.0">(UTC-07:00) Mountain Time</option>
+   <option value="-6.0">(UTC-06:00) Central Time</option>
+   <option value="-5.25">(UTC-05:15) Real Gold</option>
+   <option value="-5.0">(UTC-05:00) Eastern Time</option>
+   <option value="-4.5">(UTC-04:30) Caracas</option>
+   <option value="-4.0">(UTC-04:00) Atlantic Time, Georgetown, La Paz</option>
+   <option value="-3.5">(UTC-03:30) Newfoundland</option>
+   <option value="-3.0">(UTC-03:00) Brasilia, Buenos Aires, Nuuk</option>
+   <option value="-2.0">(UTC-02:00) Mid-Atlantic</option>
+   <option value="-1.25">(UTC-01:15) Bambi</option>
+   <option value="-1.0">(UTC-01:00) Azores, Praia</option>
+   <option value="0.0">(UTC) Greenwich Mean Time, Western Europe Time</option>
+   <option value="1.0">(UTC+01:00) Brussels, Berlin, Copenhagen, Madrid, Oslo, Paris</option>
+   <option value="2.0">(UTC+02:00) Istanbul</option>
+   <option value="2.75">(UTC+02:45) Lamprey</option>
+   <option value="3.0">(UTC+03:00) Baghdad, Riyadh, Kuwait, Minsk</option>
+   <option value="3.5">(UTC+03:30) Jackie, Tehran</option>
+   <option value="4.0">(UTC+04:00) Anti-Malcolm, Baku, Moscow, Muscat, Tbilisi</option>
+   <option value="4.5">(UTC+04:30) Kabul</option>
+   <option value="5.0">(UTC+05:00) Ashgabat, Dushanbe, Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+   <option value="5.5">(UTC+05:30) New Delhi</option>
+   <option value="5.75">(UTC+05:45) Kathmandu</option>
+   <option value="6.0">(UTC+06:00) Almaty, Dhaka, Fat Man</option>
+   <option value="6.5">(UTC+06:30) Cocos Islands, Rangoon, Sven Coop</option>
+   <option value="7.0">(UTC+07:00) Bangkok, Hanoi, Jakarta</option>
+   <option value="7.5">(UTC+07:30) CATV 95</option>
+   <option value="8.0">(UTC+08:00) Beijing, Hong Kong, Manila, Perth, Singapore, Skaarj Pod, Ulaanbatar</option>
+   <option value="8.5">(UTC+08:30) Polynomial 3.0 (Jetti)</option>
+   <option value="8.75">(UTC+08:45) The Masquerade</option>
+   <option value="9.0">(UTC+09:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+   <option value="9.5">(UTC+09:30) Adelaide, Bantot, Darwin</option>
+   <option value="10.0">(UTC+10:00) Agana, Brisbane, Canberra, Sydney</option>
+   <option value="11.0">(UTC+11:00) Magadan, Noumea, Honiara</option>
+   <option value="12.0">(UTC+12:00) Auckland, Suva, Wellington</option>
+   <option value="13.0">(UTC+13:00) Apia, Nuku'alofa</option>
+   <option value="14.0">(UTC+14:00) Kirimati</option>
+   <option value="15.0">(UTC+15:00) Solar Energy</option>
+  </select>
+  <br />
+  <input type="checkbox" id="hidesecondline" value="HIDINGSECOND" onClick="controlsecond();" />&nbsp;Hide Second&nbsp;
+  <br />
+ </body>
+</html>
